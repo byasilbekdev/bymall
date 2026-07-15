@@ -144,8 +144,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google:
-      "google-site-verification=yQ-Ie4QnYL3BUq2J_fbN6ozw24EGUI_U8p_5RqRAGn4",
+    google: "UgXB6Yx7FfwHOj3O2z-nYdmBFa0WbjglMexWTg4RPCA",
   },
 };
 
