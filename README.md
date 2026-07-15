@@ -1,6 +1,6 @@
 # 🛍️ ByUzum Clone
 
-A modern e-commerce web application inspired by Uzum Market, built with **Next.js 15**, **React 19**, **TypeScript**, and **Tailwind CSS**.
+A modern e-commerce web application inspired by Uzum Market, built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**.
 
 > **Disclaimer**
 >
@@ -75,7 +75,7 @@ src/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/byasilbekdev/byuzum-clone.git
+git clone https://github.com/byasilbekdev/byuzumclone.git
 
 cd byuzum-clone
 

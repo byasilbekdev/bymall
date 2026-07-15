@@ -50,10 +50,7 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Asilbek",
-    },
-    {
-      name: "Anvar",
+      name: "Asilbek Egamnazarov",
     },
   ],
 
@@ -147,7 +144,8 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: "google-site-verification=your-google-verification-code",
+    google:
+      "google-site-verification=yQ-Ie4QnYL3BUq2J_fbN6ozw24EGUI_U8p_5RqRAGn4",
   },
 };
 
