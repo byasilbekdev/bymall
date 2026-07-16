@@ -106,7 +106,7 @@ export default function OpenGraphImage() {
             opacity: 0.85,
           }}
         >
-          by Asilbek
+          Asilbek Egamnazarov
         </div>
       </div>
     </div>,

@@ -33,6 +33,8 @@ export const metadata: Metadata = {
 
   description: DESCRIPTION,
 
+  authors: [{ name: "Asilbek Egamnazarov" }],
+
   keywords: [
     "ByUzum Clone",
     "Uzum Market Clone",
