@@ -1,0 +1,99 @@
+{
+  "success": true,
+  "message": "Success!",
+  "code": 0,
+  "data": {
+    "total": 2,
+    "products": [
+      {
+        "id": 358247,
+        "uuid": "43664be3-e2ca-11ef-88ea-40a8f02c4f64",
+
+        "slug": "honor-x8c-8-128gb-midnight-black",
+
+        "name": "Honor X8c 8/128GB Midnight Black",
+
+        "brand": {
+          "id": 12,
+          "name": "Honor"
+        },
+
+        "sku": "HONOR-X8C-8-128-BLACK",
+
+        "images": [
+          "https://mini-io-api.texnomart.uz/catalog/product/3582/358247/208629/5c254185-13a2-409f-8517-f90e881d4fe2-medium.webp"
+        ],
+
+        "price": {
+          "current": 2319000,
+          "old": null,
+          "currency": "UZS"
+        },
+
+        "installment": {
+          "monthlyPrice": 193250,
+          "months": 18,
+          "available": true
+        },
+
+        "stock": {
+          "status": "OUT_OF_STOCK",
+          "quantity": 0
+        },
+
+        "rating": {
+          "average": 0,
+          "count": 0
+        },
+
+        "categories": [
+          {
+            "id": 1,
+            "name": "Smartfonlar va gadjetlar"
+          },
+          {
+            "id": 2,
+            "name": "Smartfonlar"
+          },
+          {
+            "id": 3,
+            "name": "HONOR smartfonlari"
+          },
+          {
+            "id": 4,
+            "name": "HONOR X seriyasi"
+          }
+        ],
+
+        "badges": [
+          {
+            "type": "IMEI",
+            "label": "IMEI",
+            "color": "#00ba00"
+          }
+        ],
+
+        "campaigns": [
+          {
+            "id": 8,
+            "name": "50-0-2"
+          }
+        ],
+
+        "description": null,
+
+        "specifications": {},
+
+        "isFavorite": false,
+        "isCompared": false,
+
+        "createdAt": "2026-07-18T09:00:00Z",
+        "updatedAt": "2026-07-18T09:00:00Z"
+      },
+      {
+        "id": 2,
+        "name": "2"
+      }
+    ]
+  }
+}
