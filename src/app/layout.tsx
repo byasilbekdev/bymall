@@ -14,7 +14,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col gap-5">{children}</body>
     </html>
   );
 }

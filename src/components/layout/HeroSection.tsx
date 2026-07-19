@@ -55,14 +55,17 @@ export default function HeroSection() {
         ))}
       </Swiper>
       <Button
-        size={"icon"}
-        className="absolute left-12 top-[45%] w-12 h-12 z-50 -translate-y-0.5 prev-btn rounded-full p-3 shadow"
+        aria-label="Previous slide"
+        className="absolute left-12 top-[46%] w-12 h-12 z-50 -translate-y-0.5 prev-btn rounded-full text-primary-foreground shadow"
       >
-        <ChevronLeft className="size-6" />
+        <ChevronLeft className="size-6" aria-hidden />
       </Button>
 
-      <Button className="absolute right-12 top-[45%] w-12 h-12 z-50 -translate-y-0.5 next-btn rounded-full p-3 shadow">
-        <ChevronRight className="size-6" />
+      <Button
+        aria-label="Next slide"
+        className="absolute right-12 top-[46%] w-12 h-12 z-50 -translate-y-0.5 next-btn rounded-full text-primary-foreground shadow"
+      >
+        <ChevronRight className="size-6" aria-hidden />
       </Button>
     </section>
   );
