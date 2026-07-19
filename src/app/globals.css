@@ -48,8 +48,8 @@
 }
 
 :root {
-  --background: oklch(0.99 0.003 95);
-  --foreground: oklch(0.27 0.02 260);
+  --background: oklch(0.98 0.005 240);
+  --foreground: oklch(0.2 0.02 240);
 
   --card: oklch(1 0 0);
   --card-foreground: var(--foreground);
@@ -57,87 +57,83 @@
   --popover: oklch(1 0 0);
   --popover-foreground: var(--foreground);
 
-  --primary: oklch(0.71 0.2 45);
-  --primary-foreground: oklch(1 0 0);
+  --primary: oklch(0.65 0.22 45);
+  --primary-foreground: oklch(0.99 0 0);
 
-  --secondary: oklch(0.97 0.003 95);
-  --secondary-foreground: var(--foreground);
+  --secondary: oklch(0.95 0.01 240);
+  --secondary-foreground: oklch(0.25 0.02 240);
 
-  --muted: oklch(0.96 0.003 95);
-  --muted-foreground: oklch(0.55 0.02 260);
+  --muted: oklch(0.95 0.005 240);
+  --muted-foreground: oklch(0.5 0.02 240);
 
-  --accent: oklch(0.96 0.02 45);
-  --accent-foreground: var(--foreground);
+  --accent: oklch(0.96 0.03 45);
+  --accent-foreground: oklch(0.35 0.15 45);
 
-  --destructive: oklch(0.63 0.25 25);
+  --destructive: oklch(0.6 0.25 25);
 
-  --border: oklch(0.91 0.003 95);
-
-  --input: oklch(0.98 0.002 95);
+  --border: oklch(0.9 0.01 240);
+  --input: oklch(0.95 0.01 240);
 
   --ring: var(--primary);
 
-  --chart-1: oklch(0.71 0.2 45);
+  --chart-1: var(--primary);
   --chart-2: oklch(0.65 0.18 150);
   --chart-3: oklch(0.62 0.17 250);
   --chart-4: oklch(0.75 0.16 80);
   --chart-5: oklch(0.58 0.21 10);
 
-  --radius: 1rem;
+  --radius: 0.75rem;
 
-  --sidebar: oklch(1 0 0);
+  --sidebar: oklch(0.99 0.003 240);
   --sidebar-foreground: var(--foreground);
   --sidebar-primary: var(--primary);
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
-  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-accent-foreground: var(--accent-foreground);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
-
-  --shadow: 0 8px 24px rgb(17 24 39 / 8%);
 }
 
 .dark {
-  --background: oklch(0.18 0.01 260);
-  --foreground: oklch(0.98 0 0);
+  --background: oklch(0.14 0.02 240);
+  --foreground: oklch(0.97 0.005 240);
 
-  --card: oklch(0.22 0.01 260);
+  --card: oklch(0.19 0.02 240);
   --card-foreground: var(--foreground);
 
   --popover: var(--card);
   --popover-foreground: var(--foreground);
 
-  --primary: oklch(0.71 0.2 45);
-  --primary-foreground: oklch(1 0 0);
+  --primary: oklch(0.72 0.2 45);
+  --primary-foreground: oklch(0.1 0.02 240);
 
-  --secondary: oklch(0.27 0.01 260);
+  --secondary: oklch(0.23 0.02 240);
   --secondary-foreground: var(--foreground);
 
-  --muted: oklch(0.25 0.01 260);
-  --muted-foreground: oklch(0.72 0.01 260);
+  --muted: oklch(0.22 0.01 240);
+  --muted-foreground: oklch(0.65 0.01 240);
 
-  --accent: oklch(0.3 0.02 45);
-  --accent-foreground: var(--foreground);
+  --accent: oklch(0.25 0.05 45);
+  --accent-foreground: oklch(0.85 0.1 45);
 
-  --border: oklch(0.3 0.01 260);
-
-  --input: oklch(0.25 0.01 260);
+  --border: oklch(0.25 0.02 240);
+  --input: oklch(0.22 0.02 240);
 
   --ring: var(--primary);
 
   --sidebar: var(--card);
   --sidebar-foreground: var(--foreground);
   --sidebar-primary: var(--primary);
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary-foreground: var(--primary-foreground);
   --sidebar-accent: var(--accent);
-  --sidebar-accent-foreground: var(--foreground);
+  --sidebar-accent-foreground: var(--accent-foreground);
   --sidebar-border: var(--border);
   --sidebar-ring: var(--ring);
 }
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/40;
   }
 
   html {
@@ -145,14 +141,17 @@
   }
 
   body {
-    @apply min-h-screen bg-background text-foreground overflow-x-hidden antialiased;
+    @apply min-h-screen bg-background text-foreground overflow-x-hidden;
   }
 
   img,
   svg,
   video,
   canvas {
-    @apply block max-w-full;
+    @apply w-auto h-auto;
+    opacity: 1;
+    visibility: visible;
+    display: block;
   }
 
   button:not(:disabled) {
@@ -168,6 +167,12 @@
   }
 
   ::selection {
-    @apply bg-primary text-primary-foreground;
+    @apply bg-primary/30 text-foreground;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto sm:px-6 md:px-8;
   }
 }
