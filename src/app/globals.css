@@ -167,7 +167,7 @@
   }
 
   ::selection {
-    @apply bg-primary/30 text-foreground;
+    @apply bg-primary/70 text-foreground;
   }
 }
 

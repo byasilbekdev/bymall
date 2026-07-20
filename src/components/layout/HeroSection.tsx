@@ -4,11 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-
+import { Button } from "../ui/button";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Button } from "../ui/button";
 
 const carouselImages = [
   "/images/carouselImgs/hero_image_1.png",
