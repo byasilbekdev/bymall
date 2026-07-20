@@ -1,15 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "../ui/separator";
-import {
-  ChevronDown,
-  Heart,
-  MapPin,
-  Menu,
-  Search,
-  ShoppingBag,
-  X,
-} from "@/icons/icons";
+import { ChevronDown, Heart, MapPin, Search, ShoppingBag } from "@/icons/icons";
 
 const Navbar = () => {
   return (
@@ -33,6 +25,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       <nav className="container flex items-center justify-between">
         <Link
           href={"/"}
@@ -48,7 +41,22 @@ const Navbar = () => {
             <span className="text-primary">By</span>Mall
           </p>
         </Link>
-        <div></div>
+        <div className="flex items-center gap-5">
+          <Link
+            href={"/wishes"}
+            className="flex items-center gap-1 font-heading border border-primary p-2.5 rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            <Heart />
+            Saralangan
+          </Link>
+          <Link
+            href={"/cart"}
+            className="flex items-center gap-1 font-heading border border-primary p-2.5 rounded-sm text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            <ShoppingBag />
+            Savat
+          </Link>
+        </div>
       </nav>
     </header>
   );
